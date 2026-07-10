@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Involved | City of Acres Homes</title>
+<meta name="description" content="Sign the petition, volunteer, or contact elected officials to support Acres Homes incorporation.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="draft-banner">
+  Working draft site — forms below are not yet connected to a submission service. Not an official government website.
+</div>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">
+      <img class="mark" src="images/logo.svg" alt="">
+      <span>
+        <span class="name">City of Acres Homes</span>
+        <span class="tagline">Incorporation Campaign</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Acres Homes</a>
+      <a href="why-incorporate.html">Why Incorporate</a>
+      <a href="process.html">The Process</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a class="cta" href="get-involved.html" aria-current="page">Get Involved</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom: 56px;">
+  <div class="container">
+    <div class="eyebrow">Take Action</div>
+    <h1>Get involved</h1>
+    <p class="lede">Incorporation only happens with organized, visible resident support. Here's how to add your voice.</p>
+  </div>
+</section>
+
+<section id="petition">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Step 1</div>
+      <h2>Sign the petition</h2>
+      <p>Add your name to show the committee, city officials, and state legislators that
+      Acres Homes residents support pursuing incorporation.</p>
+    </div>
+
+    <!--
+      SITE OWNER: This form has no backend yet. To collect real signatures, connect it to
+      a form service, e.g.:
+        - Formspree (https://formspree.io) — set action to "https://formspree.io/f/YOUR_ID"
+        - Netlify Forms — add attribute data-netlify="true" if hosting on Netlify
+        - Google Forms — embed or link out instead of using this form
+      Until then, submissions will show a "not connected" message (see js/main.js).
+    -->
+    <form class="form-card" data-form="petition" action="REPLACE_WITH_FORM_ENDPOINT" method="POST">
+      <div class="form-row">
+        <label for="p-name">Full name</label>
+        <input type="text" id="p-name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="p-address">Home address (in or near Acres Homes)</label>
+        <input type="text" id="p-address" name="address" required>
+      </div>
+      <div class="form-row">
+        <label for="p-email">Email</label>
+        <input type="email" id="p-email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="p-phone">Phone (optional)</label>
+        <input type="tel" id="p-phone" name="phone">
+      </div>
+      <div class="form-row checkbox-row">
+        <input type="checkbox" id="p-confirm" name="confirm" required>
+        <label for="p-confirm" style="margin:0;">
+          I am a resident, property owner, or stakeholder of Acres Homes and I support
+          pursuing municipal incorporation for our community.
+        </label>
+      </div>
+      <button class="btn btn-primary" type="submit">Add My Name</button>
+      <div class="form-status"></div>
+      <p class="form-note">
+        Your information will be used only by the Acres Homes Incorporation Committee to
+        demonstrate resident support and to contact you with updates. It will not be sold.
+        <em>(Site owner: replace this with your actual privacy policy.)</em>
+      </p>
+    </form>
+  </div>
+</section>
+
+<section class="alt" id="volunteer">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Step 2</div>
+      <h2>Volunteer</h2>
+      <p>We especially need help from attorneys, former city/county officials, communicators,
+      organizers, and long-time residents willing to share their story.</p>
+    </div>
+
+    <form class="form-card" data-form="volunteer" action="REPLACE_WITH_FORM_ENDPOINT" method="POST">
+      <div class="form-row">
+        <label for="v-name">Full name</label>
+        <input type="text" id="v-name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="v-email">Email</label>
+        <input type="email" id="v-email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="v-interest">How would you like to help?</label>
+        <select id="v-interest" name="interest">
+          <option>Canvassing / door-knocking</option>
+          <option>Legal or legislative expertise</option>
+          <option>Communications / social media</option>
+          <option>Event organizing</option>
+          <option>Sharing my Acres Homes story</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="v-notes">Tell us more (optional)</label>
+        <textarea id="v-notes" name="notes" rows="4"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Volunteer</button>
+      <div class="form-status"></div>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Step 3</div>
+      <h2>Contact your elected officials</h2>
+      <p>
+        Whichever legal path this campaign ends up pursuing (see
+        <a href="process.html">The Process</a>), hearing directly from residents is what
+        moves elected officials. Reach out to:
+      </p>
+    </div>
+    <div class="card-grid">
+      <div class="card official-card">
+        <div class="avatar">HD</div>
+        <div>
+          <span class="verify-tag">verify current officeholder</span>
+          <h4>Houston City Council &mdash; District [X]</h4>
+          <div class="role">Represents part or all of Acres Homes on Houston City Council</div>
+          <p>Find your council member and contact info at houstontx.gov.</p>
+        </div>
+      </div>
+      <div class="card official-card">
+        <div class="avatar">TX</div>
+        <div>
+          <span class="verify-tag">verify current officeholder</span>
+          <h4>Texas House Representative</h4>
+          <div class="role">State House district covering Acres Homes</div>
+          <p>Find your representative at house.texas.gov/districts.</p>
+        </div>
+      </div>
+      <div class="card official-card">
+        <div class="avatar">TS</div>
+        <div>
+          <span class="verify-tag">verify current officeholder</span>
+          <h4>Texas State Senator</h4>
+          <div class="role">State Senate district covering Acres Homes</div>
+          <p>Find your senator at senate.texas.gov/districts.</p>
+        </div>
+      </div>
+      <div class="card official-card">
+        <div class="avatar">HC</div>
+        <div>
+          <span class="verify-tag">verify current officeholder</span>
+          <h4>Harris County Commissioner</h4>
+          <div class="role">County precinct covering Acres Homes</div>
+          <p>Find your commissioner at harriscountytx.gov.</p>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:0.85rem;color:var(--gray);margin-top:20px;">
+      <strong>Site owner:</strong> replace the placeholders above with confirmed current
+      officeholders, districts, and direct contact links before publishing.
+    </p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>City of Acres Homes</h4>
+        <p>A resident-led effort to restore local self-governance to Acres Homes through
+        municipal incorporation. Community-organized, not a government entity.</p>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="about.html">About Acres Homes</a></li>
+          <li><a href="why-incorporate.html">Why Incorporate</a></li>
+          <li><a href="process.html">The Process</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Act</h4>
+        <ul>
+          <li><a href="get-involved.html#petition">Sign the Petition</a></li>
+          <li><a href="get-involved.html#volunteer">Volunteer</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 City of Acres Homes Incorporation Committee. Not affiliated with the City of Houston.</span>
+      <span>Content is a working draft &mdash; see <a href="about.html#sources">sources &amp; verification</a>.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
