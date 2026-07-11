@@ -22,12 +22,28 @@ images/logo.svg       Placeholder emblem (replace with real branding)
 
 ## Before you launch, do these things
 
-1. **Verify every fact marked "verify"** across the site (search for the word
-   `verify` in each `.html` file). These include: founding/annexation dates,
-   population, boundaries, incorporation years for comparison cities, current
-   officeholders and districts. Cross-check against the Texas State Historical
-   Association's *Handbook of Texas*, Houston Public Library archives, City of
-   Houston records, and U.S. Census data.
+1. **Verify the remaining facts marked "verify"** across the site (search for
+   the word `verify` in each `.html` file). Web research has already resolved
+   most of this — see below — but confirm before publishing broadly:
+   - The exact current legal boundary to use for any filing (Super
+     Neighborhood boundary vs. annexation-ordinance boundary).
+   - Founding families/developers beyond W.W. Mount and the Wright Land
+     Company.
+   - Southside Place's incorporation year (sources conflict: 1931 vs. 1934).
+   - Texas House district, Texas Senate district, and Harris County
+     Commissioner precinct for Acres Homes specifically — ZIP-level web
+     search returned ambiguous/conflicting districts, so look these up by
+     street address at [wrm.capitol.texas.gov](https://wrm.capitol.texas.gov/)
+     and [harriscountytx.gov](https://www.harriscountytx.gov/Harris-County-Commissioner-Court-Precincts).
+   - That Tarsha Jackson (Houston City Council District B) and Rodney Ellis
+     (likely Harris County Precinct 1) are still the current officeholders
+     at time of publishing.
+
+   Already confirmed via Texas State Historical Association (Handbook of
+   Texas), Wikipedia, and City of Houston records: Acres Homes was founded
+   during WWI (~1917-18); annexed into Houston in two phases (725 acres in
+   1967, 1,469 acres in 1974); and the incorporation years for every
+   comparison city in `why-incorporate.html`.
 2. **Get a real legal review of `process.html`.** It is written from general
    knowledge, not a Texas attorney's review, and is explicitly labeled as such
    on the page. Have municipal law counsel confirm the disannexation and
