@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Explorer | City of Acres Homes</title>
+<meta name="description" content="A playful 3D demo where you can walk a character around a small park scene.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  #game-wrap {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 420px;
+    background: #0b1320;
+  }
+  #game-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #game-hint {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    color: #fff;
+    font: 14px/1.4 system-ui, sans-serif;
+    background: rgba(0,0,0,0.45);
+    padding: 10px 14px;
+    border-radius: 8px;
+    max-width: 320px;
+  }
+  #game-loading {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font: 16px system-ui, sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<div class="draft-banner">
+  Working draft site — facts marked "verify" are placeholders pending confirmation. Not an official government website.
+</div>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">
+      <img class="mark" src="images/logo.svg" alt="">
+      <span>
+        <span class="name">City of Acres Homes</span>
+        <span class="tagline">Incorporation Campaign</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Acres Homes</a>
+      <a href="why-incorporate.html">Why Incorporate</a>
+      <a href="process.html">The Process</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="game.html" aria-current="page">3D Explorer</a>
+      <a class="cta" href="get-involved.html">Get Involved</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:0;">
+  <div class="container">
+    <div class="eyebrow">Just for fun</div>
+    <h1>Walk around Acres Homes park in 3D</h1>
+    <p class="lede">
+      Use the arrow keys or WASD to walk your character around a small park scene, and the
+      spacebar to jump. Nothing here is part of the incorporation campaign &mdash; it's a
+      lighthearted demo built into the site.
+    </p>
+  </div>
+</section>
+
+<section class="container" style="padding:24px 0 56px;">
+  <div id="game-wrap">
+    <canvas id="game-canvas"></canvas>
+    <div id="game-loading">Loading 3D scene&hellip;</div>
+    <div id="game-hint">WASD / Arrow keys to move &middot; Shift to run &middot; Space to jump &middot; Drag to look around</div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 City of Acres Homes Incorporation Campaign. Working draft site.</p>
+  </div>
+</footer>
+
+<script src="js/vendor/three.min.js"></script>
+<script src="js/game.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
