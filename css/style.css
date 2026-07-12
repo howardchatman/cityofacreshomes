@@ -151,11 +151,18 @@ nav.main-nav a.cta:hover {
 
 /* Hero */
 .hero {
-  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-dark) 100%);
+  background:
+    linear-gradient(100deg, rgba(8,27,52,0.94) 0%, rgba(8,27,52,0.78) 40%, rgba(8,27,52,0.42) 100%),
+    url("../images/hero-acres-homes-sign.jpg");
+  background-size: cover;
+  background-position: center 55%;
   color: var(--white);
-  padding: 72px 0 130px;
+  padding: 72px 0 96px;
   position: relative;
   overflow: hidden;
+}
+.hero h1, .hero .lede, .hero .eyebrow {
+  text-shadow: 0 2px 10px rgba(0,0,0,0.35);
 }
 
 .hero::after {
@@ -171,19 +178,6 @@ nav.main-nav a.cta:hover {
 
 .hero .container { position: relative; z-index: 1; }
 
-.hero-skyline {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 170px;
-  opacity: 0.9;
-  z-index: 0;
-  pointer-events: none;
-  -webkit-mask-image: linear-gradient(to bottom, transparent, black 35%);
-  mask-image: linear-gradient(to bottom, transparent, black 35%);
-}
-.hero-skyline img { width: 100%; height: 100%; display: block; }
 
 .eyebrow {
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -633,18 +627,24 @@ footer.site-footer {
   align-items: center;
 }
 
-.map-placeholder {
+.photo-card {
+  margin: 0;
   background: var(--white);
-  border: 2px dashed var(--line);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
-  min-height: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--gray);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.photo-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.photo-card figcaption {
+  padding: 12px 16px;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
+  font-size: 0.82rem;
+  color: var(--gray);
 }
 
 @media (max-width: 860px) {
