@@ -5,14 +5,16 @@
   --navy-dark: #081b34;
   --gold: #c9972b;
   --gold-light: #e8c874;
-  --cream: #faf6ee;
+  --terracotta: #bf5b34;
+  --terracotta-light: #e08a5c;
+  --cream: #faf3e6;
   --ink: #1a1a1a;
   --gray: #5a5f66;
-  --line: #e3ddd0;
-  --white: #ffffff;
+  --line: #e8dcc6;
+  --white: #fffdf9;
   --max-width: 1100px;
-  --radius: 10px;
-  --shadow: 0 4px 18px rgba(11, 37, 69, 0.08);
+  --radius: 16px;
+  --shadow: 0 8px 24px rgba(120, 72, 30, 0.1);
 }
 
 * { box-sizing: border-box; }
@@ -47,9 +49,9 @@ img { max-width: 100%; display: block; }
 
 /* Banner: verification notice for draft content */
 .draft-banner {
-  background: #fff4d6;
-  border-bottom: 1px solid #e6c877;
-  color: #6b4e00;
+  background: #f3e6cf;
+  border-bottom: 1px solid #e6d3a8;
+  color: #7a5a24;
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 0.85rem;
   text-align: center;
@@ -151,7 +153,7 @@ nav.main-nav a.cta:hover {
 .hero {
   background: linear-gradient(160deg, var(--navy) 0%, var(--navy-dark) 100%);
   color: var(--white);
-  padding: 72px 0 88px;
+  padding: 72px 0 130px;
   position: relative;
   overflow: hidden;
 }
@@ -164,10 +166,24 @@ nav.main-nav a.cta:hover {
   width: 420px;
   height: 420px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(201,151,43,0.18) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(191,91,52,0.22) 0%, transparent 70%);
 }
 
 .hero .container { position: relative; z-index: 1; }
+
+.hero-skyline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 170px;
+  opacity: 0.9;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 35%);
+  mask-image: linear-gradient(to bottom, transparent, black 35%);
+}
+.hero-skyline img { width: 100%; height: 100%; display: block; }
 
 .eyebrow {
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -458,6 +474,65 @@ details.faq p { color: var(--gray); padding-bottom: 18px; margin: 0; }
 .form-status.success { background: #e4f4e6; color: #1e5e2b; }
 .form-status.error { background: #fbe4e4; color: #8a1f1f; }
 
+/* Homepage: petition-front-and-center section */
+.petition-home {
+  background: linear-gradient(180deg, #fff8ec 0%, var(--cream) 100%);
+  border-bottom: 1px solid var(--line);
+}
+.petition-home .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 56px 24px;
+}
+.petition-home .pitch .eyebrow { color: var(--terracotta); }
+.petition-home .pitch h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+.petition-home .pitch p { color: var(--gray); font-size: 1.05rem; }
+.petition-home .signer-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.85rem;
+  color: var(--terracotta);
+  font-weight: 700;
+  margin-top: 6px;
+}
+.petition-home .signer-count .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--terracotta);
+  display: inline-block;
+}
+.form-card.warm {
+  border-color: #ecd9b8;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+.form-card.compact .form-row { margin-bottom: 14px; }
+
+/* Resident quote */
+.quote-block {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.quote-block blockquote {
+  margin: 0 0 16px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: var(--navy);
+  font-style: italic;
+}
+.quote-block cite {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
 /* Callout */
 .callout {
   background: var(--navy);
@@ -575,6 +650,7 @@ footer.site-footer {
 @media (max-width: 860px) {
   .two-col { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  .petition-home .container { grid-template-columns: 1fr; padding: 40px 24px; }
 }
 
 @media (max-width: 720px) {

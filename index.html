@@ -38,17 +38,66 @@
 
 <section class="hero">
   <div class="container">
-    <div class="eyebrow">A Community-Led Campaign</div>
-    <h1>Self-determination for Acres Homes, Houston, Texas.</h1>
+    <div class="eyebrow">Neighbors, Not Strangers</div>
+    <h1>We built this neighborhood. Let's govern it too.</h1>
     <p class="lede">
-      For over a century, Acres Homes has been a proud, self-reliant community in northwest Houston.
-      We're organizing to incorporate as our own city &mdash; so the people who live here, and pay taxes
-      here, have the final say over our streets, our services, and our future.
+      For over a century, Acres Homes has been home &mdash; tree-lined streets, big yards,
+      family land passed down for generations, and neighbors who look out for one another.
+      Now we're coming together to incorporate as our own city, so the people who live here
+      and pay taxes here have the final say over our streets, our services, and our future.
     </p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="get-involved.html#petition">Sign the Petition</a>
+      <a class="btn btn-primary" href="#petition-home">Add Your Name</a>
       <a class="btn btn-outline" href="why-incorporate.html">Why Incorporate?</a>
     </div>
+  </div>
+  <div class="hero-skyline" aria-hidden="true">
+    <img src="images/skyline.svg" alt="" width="1400" height="220" loading="eager">
+  </div>
+</section>
+
+<section class="petition-home" id="petition-home">
+  <div class="container">
+    <div class="pitch">
+      <div class="eyebrow">Join Your Neighbors</div>
+      <h2>Add your name to the list</h2>
+      <p>
+        This is how it starts &mdash; not with a courtroom, but with a list of neighbors who
+        agree it's time. Takes about 30 seconds, and every name makes the case stronger when
+        we bring this to City Hall and Austin.
+      </p>
+      <div class="signer-count">
+        <span class="dot"></span>
+        <span><span class="verify-tag" style="background:none;color:inherit;padding:0;">verify &mdash;</span> replace with a live signer count once the petition is connected</span>
+      </div>
+    </div>
+    <form class="form-card warm compact" data-form="petition" action="REPLACE_WITH_FORM_ENDPOINT" method="POST">
+      <div class="form-row">
+        <label for="hp-name">Full name</label>
+        <input type="text" id="hp-name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="hp-address">Home address (in or near Acres Homes)</label>
+        <input type="text" id="hp-address" name="address" required>
+      </div>
+      <div class="form-row">
+        <label for="hp-email">Email</label>
+        <input type="email" id="hp-email" name="email" required>
+      </div>
+      <div class="form-row checkbox-row">
+        <input type="checkbox" id="hp-confirm" name="confirm" required>
+        <label for="hp-confirm" style="margin:0;">
+          I'm a resident, property owner, or stakeholder of Acres Homes and I support
+          pursuing incorporation for our community.
+        </label>
+      </div>
+      <button class="btn btn-primary" type="submit">Add My Name</button>
+      <div class="form-status"></div>
+      <p class="form-note">
+        Used only by the Acres Homes Incorporation Committee to show resident support and
+        keep you posted. Never sold. <a href="get-involved.html#volunteer">Want to do more?</a>
+      </p>
+    </form>
   </div>
 </section>
 
@@ -116,14 +165,26 @@
 
 <section class="alt">
   <div class="container">
+    <div class="quote-block">
+      <blockquote>
+        &ldquo;Placeholder &mdash; replace with a real quote from a longtime Acres Homes
+        resident about what this neighborhood means to them and why self-governance
+        matters.&rdquo;
+      </blockquote>
+      <cite>Site owner: swap in a real name and a real voice here.</cite>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
     <div class="callout">
-      <h2>This starts with residents &mdash; it starts with you.</h2>
+      <h2>Signing is step one. Here's how to do more.</h2>
       <p>
-        Incorporation is a legal and political process, and it will take organized, sustained
-        resident support to move it forward. Add your name, share your story, and help us
-        build the case for an independent City of Acres Homes.
+        We need canvassers, storytellers, attorneys, and neighbors willing to show up at a
+        meeting. Whatever time you have, there's a place for you in this.
       </p>
-      <a class="btn btn-primary" href="get-involved.html">Get Involved Today</a>
+      <a class="btn btn-primary" href="get-involved.html#volunteer">See Ways to Help</a>
     </div>
   </div>
 </section>

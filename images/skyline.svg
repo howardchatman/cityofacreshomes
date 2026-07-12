@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 220" preserveAspectRatio="none" role="img" aria-label="Illustrated silhouette of Acres Homes tree-lined streets">
+  <g fill="#c9972b">
+    <!-- ground line -->
+    <rect x="0" y="196" width="1400" height="4"/>
+
+    <!-- tree cluster 1 -->
+    <rect x="46" y="150" width="8" height="48"/>
+    <ellipse cx="50" cy="130" rx="42" ry="34"/>
+    <ellipse cx="20" cy="150" rx="26" ry="22"/>
+    <ellipse cx="82" cy="152" rx="24" ry="20"/>
+
+    <!-- small house -->
+    <rect x="150" y="150" width="70" height="48"/>
+    <polygon points="145,150 185,110 225,150"/>
+    <rect x="178" y="168" width="16" height="30"/>
+    <rect x="204" y="140" width="10" height="14"/>
+
+    <!-- tree -->
+    <rect x="272" y="156" width="7" height="42"/>
+    <ellipse cx="276" cy="140" rx="34" ry="28"/>
+
+    <!-- gabled house w/ porch -->
+    <rect x="330" y="156" width="90" height="42"/>
+    <polygon points="322,156 375,116 428,156"/>
+    <rect x="330" y="178" width="90" height="8" opacity="0.55"/>
+    <rect x="352" y="170" width="14" height="28"/>
+    <rect x="386" y="168" width="12" height="12"/>
+
+    <!-- water tower, nod to Acres Homes' rural/agrarian roots -->
+    <ellipse cx="500" cy="120" rx="34" ry="20"/>
+    <rect x="466" y="118" width="68" height="6"/>
+    <rect x="480" y="124" width="4" height="72"/>
+    <rect x="516" y="124" width="4" height="72"/>
+    <rect x="498" y="124" width="4" height="72"/>
+
+    <!-- tree cluster 2 -->
+    <rect x="578" y="152" width="8" height="46"/>
+    <ellipse cx="582" cy="132" rx="40" ry="32"/>
+    <ellipse cx="552" cy="150" rx="22" ry="18"/>
+    <ellipse cx="612" cy="150" rx="22" ry="18"/>
+
+    <!-- low ranch house, large-lot character -->
+    <rect x="668" y="164" width="120" height="34"/>
+    <polygon points="660,164 728,132 796,164"/>
+    <rect x="700" y="176" width="16" height="22"/>
+    <rect x="744" y="174" width="24" height="16"/>
+
+    <!-- small church-ish shape, nod to community's churches -->
+    <rect x="826" y="140" width="56" height="58"/>
+    <polygon points="820,140 854,104 888,140"/>
+    <rect x="848" y="86" width="10" height="20"/>
+    <polygon points="845,86 853,74 861,86"/>
+    <rect x="846" y="164" width="16" height="34"/>
+
+    <!-- tree -->
+    <rect x="928" y="158" width="7" height="40"/>
+    <ellipse cx="932" cy="142" rx="30" ry="24"/>
+
+    <!-- two-story house -->
+    <rect x="978" y="128" width="86" height="70"/>
+    <polygon points="970,128 1021,96 1072,128"/>
+    <rect x="1000" y="156" width="16" height="42"/>
+    <rect x="1030" y="146" width="14" height="14"/>
+    <rect x="1000" y="140" width="14" height="14"/>
+
+    <!-- tree cluster 3 -->
+    <rect x="1110" y="150" width="8" height="48"/>
+    <ellipse cx="1114" cy="128" rx="44" ry="36"/>
+    <ellipse cx="1080" cy="152" rx="24" ry="20"/>
+    <ellipse cx="1150" cy="150" rx="26" ry="22"/>
+
+    <!-- small house -->
+    <rect x="1214" y="156" width="72" height="42"/>
+    <polygon points="1208,156 1250,120 1292,156"/>
+    <rect x="1240" y="174" width="16" height="24"/>
+
+    <!-- closing trees -->
+    <rect x="1330" y="154" width="7" height="44"/>
+    <ellipse cx="1334" cy="136" rx="36" ry="28"/>
+    <rect x="1370" y="160" width="6" height="38"/>
+    <ellipse cx="1373" cy="146" rx="26" ry="20"/>
+  </g>
+</svg>
