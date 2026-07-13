@@ -68,7 +68,11 @@
         <span><span class="verify-tag" style="background:none;color:inherit;padding:0;">verify &mdash;</span> replace with a live signer count once the petition is connected</span>
       </div>
     </div>
-    <form class="form-card warm compact" data-form="petition" action="REPLACE_WITH_FORM_ENDPOINT" method="POST">
+    <form class="form-card warm compact" data-form="petition" action="/api/petition" method="POST">
+      <div class="form-row hp-field" aria-hidden="true">
+        <label for="home-hp">Leave this field blank</label>
+        <input type="text" id="home-hp" name="_gotcha" tabindex="-1" autocomplete="off">
+      </div>
       <div class="form-row">
         <label for="hp-name">Full name</label>
         <input type="text" id="hp-name" name="name" required>

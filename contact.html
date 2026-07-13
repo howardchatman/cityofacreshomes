@@ -47,7 +47,11 @@
 <section>
   <div class="container">
     <div class="two-col">
-      <form class="form-card" data-form="contact" action="REPLACE_WITH_FORM_ENDPOINT" method="POST">
+      <form class="form-card" data-form="contact" action="/api/contact" method="POST">
+        <div class="form-row hp-field" aria-hidden="true">
+          <label for="c-hp">Leave this field blank</label>
+          <input type="text" id="c-hp" name="_gotcha" tabindex="-1" autocomplete="off">
+        </div>
         <div class="form-row">
           <label for="c-name">Full name</label>
           <input type="text" id="c-name" name="name" required>

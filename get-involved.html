@@ -53,15 +53,11 @@
       Acres Homes residents support pursuing incorporation.</p>
     </div>
 
-    <!--
-      SITE OWNER: This form has no backend yet. To collect real signatures, connect it to
-      a form service, e.g.:
-        - Formspree (https://formspree.io) — set action to "https://formspree.io/f/YOUR_ID"
-        - Netlify Forms — add attribute data-netlify="true" if hosting on Netlify
-        - Google Forms — embed or link out instead of using this form
-      Until then, submissions will show a "not connected" message (see js/main.js).
-    -->
-    <form class="form-card" data-form="petition" action="REPLACE_WITH_FORM_ENDPOINT" method="POST">
+    <form class="form-card" data-form="petition" action="/api/petition" method="POST">
+      <div class="form-row hp-field" aria-hidden="true">
+        <label for="p-hp">Leave this field blank</label>
+        <input type="text" id="p-hp" name="_gotcha" tabindex="-1" autocomplete="off">
+      </div>
       <div class="form-row">
         <label for="p-name">Full name</label>
         <input type="text" id="p-name" name="name" required>
@@ -105,7 +101,11 @@
       organizers, and long-time residents willing to share their story.</p>
     </div>
 
-    <form class="form-card" data-form="volunteer" action="REPLACE_WITH_FORM_ENDPOINT" method="POST">
+    <form class="form-card" data-form="volunteer" action="/api/volunteer" method="POST">
+      <div class="form-row hp-field" aria-hidden="true">
+        <label for="v-hp">Leave this field blank</label>
+        <input type="text" id="v-hp" name="_gotcha" tabindex="-1" autocomplete="off">
+      </div>
       <div class="form-row">
         <label for="v-name">Full name</label>
         <input type="text" id="v-name" name="name" required>
